@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#FF7212, #FF9900);
+
+}
+
+
+.titulo-h1{
+    margin: 10px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.975);
+    text-align: center;
+}
+
+.formulario{
+    padding: 20px;
+    background: rgba(255, 255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar .terra{
+       width: 220px;
+/*     height: 0px;
+ */    border-right: 50px solid transparent;
+/*     border-left: 60px solid transparent;
+ */    border-top: 80px solid #FF7212, #FF9900;
+/*     background:  linear-gradient(#FF7212, #FF9900);
+ */}
+
+form .btn-warning{
+    margin: 20px 0;
+    color: #fff;
+}
+
+form label{
+    margin-top: 15px;
+    color: #000;
+}

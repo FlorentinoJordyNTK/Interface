@@ -1,0 +1,37 @@
+<div class="container principal">
+    <h1 class="titulo-h1">Formulario Nomitek</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" class="row" (ngSubmit)="submit()">
+        <div class="col-md-6 col-sm-12">
+            <label for="identificador" class="form-label">Identificador</label>
+            <input id="identificador" type="text" class="form-control" formControlName="identificador" placeholder="Identificador">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input id="nombre" type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <label for="apellidoP" class="form-label">Apellido Paterno</label>
+            <input id="apellidoP" type="text" class="form-control" formControlName="apellidoP" placeholder="Apellido Paterno">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <label for="apellidoM" class="form-label">Apellido Materno</label>
+            <input id="apellidoM" type="text" class="form-control" formControlName="apellidoM" placeholder="Apellido Materno">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <label for="pdwUsuario" class="form-label">PDW Usuario:</label>
+            <input id="pdwUsuario" type="text" class="form-control" formControlName="pdwUsuario" placeholder="PDW Usuario">
+        </div>
+        
+        <div class="col-md-6 col-sm-12">
+            <label for="correo" class="form-label">Correo:</label>
+            <input id="correo" type="mail" class="form-control" formControlName="correo" placeholder="Correo">
+        </div>
+
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-warning" [disabled]="!form.valid">Enviar</button>
+        </div>
+    </form>
+</div>
