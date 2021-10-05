@@ -1,6 +1,6 @@
 <div class="container principal">
-    <h1 class="titulo-h1">Formulario Nomitek</h1>
-    <form [formGroup]="form" (ngSubmit)="submit()" class="row" (ngSubmit)="submit()">
+    <h1 class="titulo-h1">Formulario Inicio</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" class="formulario row" (ngSubmit)="submit()">
         <div class="col-md-6 col-sm-12">
             <label for="identificador" class="form-label">Identificador</label>
             <input id="identificador" type="text" class="form-control" formControlName="identificador" placeholder="Identificador">
@@ -35,3 +35,41 @@
         </div>
     </form>
 </div>
+
+<!-- <div class="container principal">
+    <h1 class="titulo-h1">IDSE</h1>
+    <form class="formulario row">
+
+        <div class="col-md-6 col-sm-12">
+          <label for="id" class="form-label">Identificador: </label>
+          <input id="id" type="text" class="form-control" placeholder="Identificador">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <label for="nombre" class="form-label">Nombre: </label>
+            <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <label for="apellidoP" class="form-label">Apellido Paterno: </label>
+            <input id="apellidoP" type="text" class="form-control" placeholder="Apellido Paterno">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <label for="apellidoM" class="form-label">Apellido Materno: </label>
+          <input id="apellidoM" type="text" class="form-control" placeholder="Apellido Materno">
+        </div>
+
+        <div class="col-md-12 col-sm-12">
+            <label for="PDWusuario" class="form-label">PDW Usuario: </label>
+            <input  id="PDWusuario" type="text" class="form-control" placeholder="PDW Usuario">
+        </div>
+
+        <div class="col-md-12 col-sm-12">
+            <label for="correo" class="form-label">Correo: </label>
+            <input  id="correo" type="mail" class="form-control" placeholder="Correo">
+        </div>
+        <div class="col-12">
+            <button id="enviar" class="btn btn-warning">Enviar</button>
+        </div>
+    </form>
+</div> -->

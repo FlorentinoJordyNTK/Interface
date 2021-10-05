@@ -1,0 +1,22 @@
+<div class="container principal">
+    <h1 class="titulo-h1">Consulta de Movimientos Rechazados</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" class="formulario row" (ngSubmit)="submit()">
+        <div class="col-md-12 col-sm-12">
+            <label for="identificador" class="form-label">Identificador</label>
+            <input id="identificador" type="text" class="form-control" formControlName="identificador" placeholder="Identificador">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <label for="fechamin" class="form-label">Fecha Mínima</label>
+            <input id="fechamin" type="date" class="form-control" formControlName="fechamin" placeholder="">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <label for="fechamax" class="form-label">Fecha Máxima de Expiración</label>
+            <input id="fechamax" type="date" class="form-control" formControlName="fechamax" placeholder="">
+        </div>
+
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-warning" [disabled]="!form.valid">Enviar</button>
+        </div>
+    </form>
+</div>

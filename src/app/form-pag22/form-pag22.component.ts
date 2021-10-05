@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  selector: 'app-form-pag22',
+  templateUrl: './form-pag22.component.html',
+  styleUrls: ['./form-pag22.component.css']
 })
-export class FormularioComponent implements OnInit {
+export class FormPag22Component implements OnInit {
 
+ 
   form: FormGroup;
 
   constructor(
@@ -15,11 +16,8 @@ export class FormularioComponent implements OnInit {
     ){
       this.form = formBuilder.group({
         identificador: ['', [Validators.required]],
-        nombre: ['', [Validators.required]],
-        apellidoP: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(30)]],
-        apellidoM: ['', [Validators.required]],
-        pdwUsuario: ['', [Validators.required]],
-        correo: ['', [Validators.required, Validators.email]]
+        fechamin: ['', [Validators.required]],
+        fechamax: ['', [Validators.required]],
       });
   }
 
@@ -32,7 +30,6 @@ export class FormularioComponent implements OnInit {
       alert("Faltan campos por llenar")
     }
   }
-
 
   ngOnInit(): void {
   }
