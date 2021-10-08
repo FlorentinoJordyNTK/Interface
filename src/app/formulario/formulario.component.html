@@ -8,6 +8,11 @@
         <div class="col-md-6 col-sm-12">
             <label for="nombre" class="form-label">Nombre Completo</label>
             <input id="nombre" type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+            <div *ngIf="form.controls['nombre'].invalid && (form.controls['nombre'].dirty || form.controls['nombre'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['nombre'].errors">
+                El campo nombre es Obligatorio.
+              </div>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
