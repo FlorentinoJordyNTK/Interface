@@ -4,13 +4,18 @@
         <div class="col-md-6 col-sm-12">
             <label for="identificador" class="form-label">Identificador</label>
             <input id="identificador" type="text" class="form-control" formControlName="identificador" placeholder="Identificador">
+            <div *ngIf="form.controls['identificador'].invalid && (form.controls['identificador'].dirty || form.controls['identificador'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['identificador'].errors">
+                El campo identificador es Obligatorio.
+              </div>
+            </div>
         </div>
         <div class="col-md-6 col-sm-12">
             <label for="nombre" class="form-label">Nombre Completo</label>
             <input id="nombre" type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
             <div *ngIf="form.controls['nombre'].invalid && (form.controls['nombre'].dirty || form.controls['nombre'].touched)" class="alert alert-danger">
                 <div *ngIf="form.controls['nombre'].errors">
-                El campo nombre es Obligatorio.
+                El campo Nombre es Obligatorio.
               </div>
             </div>
         </div>
@@ -18,21 +23,41 @@
         <div class="col-md-6 col-sm-12">
             <label for="apellidoP" class="form-label">Apellido Paterno</label>
             <input id="apellidoP" type="text" class="form-control" formControlName="apellidoP" placeholder="Apellido Paterno">
+            <div *ngIf="form.controls['apellidoP'].invalid && (form.controls['apellidoP'].dirty || form.controls['apellidoP'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['apellidoP'].errors">
+                El campo Apellido Paterno es Obligatorio.
+              </div>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
             <label for="apellidoM" class="form-label">Apellido Materno</label>
             <input id="apellidoM" type="text" class="form-control" formControlName="apellidoM" placeholder="Apellido Materno">
+            <div *ngIf="form.controls['apellidoM'].invalid && (form.controls['apellidoM'].dirty || form.controls['apellidoM'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['apellidoM'].errors">
+                El campo Apellido Materno es Obligatorio.
+              </div>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
             <label for="pdwUsuario" class="form-label">PDW Usuario:</label>
             <input id="pdwUsuario" type="text" class="form-control" formControlName="pdwUsuario" placeholder="PDW Usuario">
+            <div *ngIf="form.controls['pdwUsuario'].invalid && (form.controls['pdwUsuario'].dirty || form.controls['pdwUsuario'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['pdwUsuario'].errors">
+                El campo Apellido PDW es Obligatorio.
+              </div>
+            </div>
         </div>
         
         <div class="col-md-6 col-sm-12">
             <label for="correo" class="form-label">Correo:</label>
             <input id="correo" type="mail" class="form-control" formControlName="correo" placeholder="Correo">
+            <div *ngIf="form.controls['correo'].invalid && (form.controls['correo'].dirty || form.controls['correo'].touched)" class="alert alert-danger">
+                <div *ngIf="form.controls['correo'].errors">
+                Ingresa un correo valido.
+              </div>
+            </div>
         </div>
 
         <div class="col-md-12">
