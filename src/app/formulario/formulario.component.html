@@ -1,6 +1,6 @@
 <div class="container principal">
     <h1 class="titulo-h1">Formulario Inicio</h1>
-    <form [formGroup]="form" (ngSubmit)="submit()" class="formulario row" (ngSubmit)="submit()">
+    <form [formGroup]="form" (ngSubmit)="submit()" class="formulario row mb-4">
         <div class="col-md-6 col-sm-12">
             <label for="identificador" class="form-label">Identificador</label>
             <input id="identificador" type="text" class="form-control" formControlName="identificador" placeholder="Identificador">
@@ -36,7 +36,7 @@
             <div *ngIf="form.controls['apellidoM'].invalid && (form.controls['apellidoM'].dirty || form.controls['apellidoM'].touched)" class="alert alert-danger">
                 <div *ngIf="form.controls['apellidoM'].errors">
                 El campo Apellido Materno es Obligatorio.
-              </div>
+                </div>
             </div>
         </div>
 
